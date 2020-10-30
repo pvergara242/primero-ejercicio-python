@@ -1,7 +1,6 @@
-
+pago = int(input('ingresa pago por hora '))
+horas = int(input('ingrese las horas trabajadas'))
 try:
-    pago = int(input('ingresa pago por hora '))
-    horas = int(input('ingrese las horas trabajadas'))
     salario = pago*horas
     horasextras = horas - 40
     extras = (40*pago) + (horasextras*pago*1.5)
