@@ -1,3 +1,5 @@
+import json
+
 def conteo(nombre_archivo):
     try:
      fhand = open(nombre_archivo)
@@ -12,7 +14,9 @@ def conteo(nombre_archivo):
                 palabras[word] = 1
             else:
                 palabras[word] += 1
-    print(palabras)
+    for word in palabras:
+         print(word, palabras[word])
+    # print (json.dumps(palabras, indent=4))
 pass
 nombre_archivo = input('cual es el nombre del archivo ')
 conteo(nombre_archivo)
